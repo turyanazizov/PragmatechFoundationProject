@@ -1,0 +1,270 @@
+body{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+}
+/* Info Section Style Start */
+#info{
+    background-color: #f6f6f6;
+    padding: 15px 0px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.info-social a i{
+    color: #474747;
+    font-size: 1.4em;
+    margin-right: 10px;
+}
+
+/* Main-info Section Style Start */
+#main-info{
+    background-color: white;
+    padding: 35px 0px;
+}
+.main-info{
+    display: flex;
+    justify-content: space-between;
+}
+.main-info-content{
+    display: flex;
+    justify-content: center;
+}
+.open-close-info{
+    display: flex;
+}
+.open-close-info h1{
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.open-close-info h1 p{
+    font-weight: 300;
+    font-size: 1em;
+    margin-top: 5px;
+}
+.open-close-info i{
+    font-size: 2.7em;
+    margin-right: 10px;
+    color: lightskyblue;
+}
+.location-info{
+    display: flex;
+    margin-left: 20px;
+}
+.location-info h1{
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.location-info h1 p{
+    font-weight: 300;
+    font-size: 1em;
+    margin-top: 5px;
+}
+.location-info i{
+    font-size: 2.7em;
+    margin-right: 10px;
+    color: lightskyblue;
+}
+.contact-info{
+    display: flex;
+    margin-left: 20px;
+}
+.contact-info h1{
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.contact-info h1 p{
+    font-weight: 300;
+    font-size: 1em;
+    margin-top: 5px;
+}
+.contact-info i{
+    font-size: 2.7em;
+    margin-right: 10px;
+    color: lightskyblue;
+}
+/* Navbar Section Style Start */
+#navbar{
+    padding: 20px 0px ;
+    background-color: #323946;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navabar-nav ul{
+    display: flex;
+}
+.navabar-nav ul li{
+    margin-right: 30px;
+}
+.navabar-nav ul li a{
+    color: white;
+    font-weight: 500;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.navbar-search a i{
+    font-size: 1.7em;
+    color: white;
+    font-weight: 600;
+}
+/* Solutions Section Style Start */
+#solutions{
+    height: 500px;
+    background-image: url(https://livedemo00.template-help.com/wt_58940/images/home-slide-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+}
+.solutions-content h1{
+    font-size: 4.3em;
+    font-weight: 500;
+}
+.solutions-buttons{
+    display: flex;
+    margin-top: 40px;
+}
+.learn-button{
+    margin-right: 20px;
+}
+.learn-button a{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white;
+    background-color: #24a3d8;
+    padding: 15px 30px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+.services-button a{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: black;
+    border: 2px solid grey;
+    padding: 15px 30px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+/* Services Section Style Start */
+#services{
+    padding: 30px 0px;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+}
+.financial{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+.financial i{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.financial h1{
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 20px ;
+}
+.financial p{
+    font-size: 1.2em;
+}
+.retirement{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+.retirement i{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.retirement h1{
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 20px ;
+}
+.retirement p{
+    font-size: 1.2em;
+}
+.risk{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+.risk i{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.risk h1{
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 20px ;
+}
+.risk p{
+    font-size: 1.2em;
+}
+.texation{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+.texation i{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.texation h1{
+    font-weight: 500;
+    font-size: 2em;
+    margin-bottom: 20px ;
+}
+.texation p{
+    font-size: 1.2em;
+}
+/* Works Section Style Start */
+#works{
+    background-image: url(	https://livedemo00.template-help.com/wt_58940/images/bg-image-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 220px;
+    display: flex;
+    align-items: center;
+ }
+ .works{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .works h1{
+     font-size: 4.5em;
+     font-weight: 500;
+     color: white;
+     margin-right: 30px;
+ }
+.works p{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: white; 
+    margin-right: 30px;  
+ }
+ .works a{
+     text-decoration: none;
+     padding: 15px 15px;
+     background-color: #24a3d8;
+     color:white;
+     font-weight: 500;
+     font-size: 1.2em;
+     border-radius: 7px;
+ }

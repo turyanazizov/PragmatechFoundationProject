@@ -1,0 +1,120 @@
+/* Main Section Start */
+#main-section{
+    padding-top: 50px;
+}
+.main-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    transition: box-shadow .2s;
+    width: 300px;
+    height: 380px;
+    border: 1px solid rgb(221, 221, 221);;
+    margin: 0px 6.6px;
+}
+.item:hover{
+    box-shadow: 0 0 11px grey;
+}
+.item-view{
+    background-image: url(https://cdn.oxu.az/uploads/W1siZiIsIjIwMjEvMTAvMDEvMTcvMzgvMjYvYjE2MmIwMjAtZjYyOC00NTQ1LTgzMTctZjgyYzI4ZGM4ZjlmL19ST00wMDU2LmpwZyJdLFsicCIsImVuY29kZSIsImpwZyIsIi1xdWFsaXR5IDgwIl0sWyJwIiwidGh1bWIiLCI2MjB4NDY1XHUwMDNlIl1d?sha=ec0a8337a8ef353e);
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    background-position: center center;
+}
+.date{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    width: 55px;
+    color: white;
+    font-weight: bold;
+}
+.date-h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:3px 8px 7px 8px; 
+    background-color: #2a9d8f;
+}
+.date-h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:3px 8px 7px 8px; 
+    background-color: #023e8a;
+}
+.item-content{
+    color: #13317F;
+    line-height: 1.25;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+
+/* Rating Section Start*/
+#rating-section{
+    margin-top: 1px;
+}
+.rating-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rating-item{
+    width: 300px;
+    height: 35px;
+    border: 1px solid rgb(221, 221, 221);;
+    margin: 0px 6.6px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color:  #f2f2f2;
+}
+.like{
+    font-size: 16px;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right:1px solid #dddddd;
+}
+.like:hover{
+    background-color: #32CD32;
+    color: white;
+}
+.unlike:hover{
+    background-color: #f50f0f;
+    color: white;
+}
+.like i{
+    margin-right: 10px;
+}
+.unlike{
+    font-size: 16px;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right:1px solid #dddddd;
+}
+.unlike i{
+    margin-right: 10px;
+}
+.view{
+    font-size: 16px;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right:1px solid #dddddd;
+}
+.view i{
+    margin-right: 10px;
+}

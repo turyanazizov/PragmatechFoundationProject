@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+}
+/* Section Style Start */
+.section{
+    background-color:lightgray;
+    padding: 100px 0px;
+}
+.section-container{
+    margin: 0 auto;
+    width: 700px;
+}
+.section-main-content{
+    width:calc(100%/3*2 - 13px);
+    height: 300px;
+    display: inline-block;
+    margin: 0px 5px;
+    background-color: cadetblue;
+    background-image: url(/OxuazSection/photos/phto.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.section-main-advertising{
+    width:calc(100%/3 - 13px);
+    height: 300px;
+    display: inline-block;
+    margin: 0px 5px;
+    background-color:lightgoldenrodyellow;
+    background-image: url(/OxuazSection/photos/advertisement.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.section-news-item{
+    width: calc(100%/3 - 13px);
+    height: 150px;
+    display: inline-block;
+    margin: 10px 5px 0px 5px;
+    background-color: crimson;
+    background-image: url(/OxuazSection/photos/bbc-world-news-logo.png);
+    background-position: center;
+    background-size: cover;
+}
+/* Section Style End */

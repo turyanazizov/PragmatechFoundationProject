@@ -1,0 +1,27 @@
+.flag{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.blue{
+  width: 1200px;
+  height: 200px;
+  background-color: #00B9E4;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+.red{
+    width: 1200px;
+    height: 200px;
+    background-color: #ED2939;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+  .green{
+    width: 1200px;
+    height: 200px;
+    background-color: #3F9C35;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }

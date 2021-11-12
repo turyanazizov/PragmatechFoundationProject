@@ -1,0 +1,68 @@
+body{
+  margin: 0px;
+}
+.page{
+    padding: 20px 0px ;
+    background-color:lightgray;
+}
+.page-content{
+    width: 800px;
+    background-color: bisque;
+    margin: 0 auto;
+}
+.page-content-main{
+    margin-top: 5px;
+}
+.main-logo{
+    width: calc(100%/4 - 16px);
+    height: 40px;
+    border: 2px solid black;
+    margin: 5px 5px;
+    display: inline-block;
+}
+.main-header{
+    width: calc(100%/4*3 - 16px);
+    height: 40px;
+    border: 2px solid black;
+    margin: 5px 5px;
+    display: inline-block;
+}
+.page-content-nav{
+    width:calc(100% - 14px);
+    height: 25px;
+    border: 2px solid black;
+    margin: 0px 5px;
+}
+.content-photo-area{
+    width: calc(100%/7*3 - 16px);
+    height: 250px;
+    border: 2px solid black;
+    margin: 0px 5px;
+    display: inline-block;
+}
+.page-content-operations{
+    margin-top: 5px;
+}
+.content-messagingArea{
+    width: calc(100%/7*4 - 16px);
+    height: 250px;
+    border: 2px solid black;
+    margin: 0px 5px;
+    display: inline-block;
+}
+.page-content-allMessages{
+    margin-top: 5px;
+}
+.content-secondaryMessagingArea{
+    width: calc(100%/3 - 17px);
+    height: 250px;
+    border: 2px solid black;
+    margin: 0px 5px;
+    display: inline-block;
+}
+.page-content-footer{
+    width:calc(100% - 14px);
+    height: 25px;
+    border: 2px solid black;
+    margin: 0px 5px;
+}

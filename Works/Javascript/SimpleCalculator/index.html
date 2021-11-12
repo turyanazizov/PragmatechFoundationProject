@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="calc">
+        <form>
+            <h3> Simple Calculator</h3>
+            <div class="first">
+                <h5>First Number - </h5> <input type="text" id="firstnum">
+            </div>
+            <div class="second">
+                <h5>Second Number - </h5> <input type="text" id="secondnum">
+            </div>
+        </form>
+        <div class="buttons">
+            <button id="vur" onclick="vur()">Vur X </button>
+            <button id="bol" onclick="bol()">Bol : </button>
+            <button id="topla" onclick="topla()">Topla + </button>
+            <button id="cix" onclick="cix()">Cix - </button>
+        </div>
+        <div class="result">
+            <p>The Result is : </p>
+            <span id="result"></span>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

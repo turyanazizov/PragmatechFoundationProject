@@ -1,0 +1,281 @@
+/* Reset Styles */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* 12 Column Grid System */
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.container-full {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-1 {
+    width: calc((100%/12)*1);
+}
+
+.col-2 {
+    width: calc((100%/12)*2);
+}
+
+.col-3 {
+    width: calc((100%/12)*3);
+}
+
+.col-4 {
+    width: calc((100%/12)*4);
+}
+
+.col-5 {
+    width: calc((100%/12)*5);
+}
+
+.col-6 {
+    width: calc((100%/12)*6);
+}
+
+.col-7 {
+    width: calc((100%/12)*7);
+}
+
+.col-8 {
+    width: calc((100%/12)*8);
+}
+
+.col-9 {
+    width: calc((100%/12)*9);
+}
+
+.col-10 {
+    width: calc((100%/12)*10);
+}
+
+.col-11 {
+    width: calc((100%/12)*11);
+}
+
+.col-12 {
+    width: calc((100%/12)*12);
+}
+/* Reset CSS End */
+
+/* Wireframe Style Start */
+#wireframe{
+    margin-top: 10px;
+    color: rgb(241, 241, 241);
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serifs;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header-logo {
+    width: 200px;
+    height: 40px;
+    display: flex;
+}
+
+.header-future {
+    width: 600px;
+    height: 40px;
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 40px;
+
+    margin-bottom: 20px;
+}
+
+.left-content {
+    height: 500px;
+
+    display: grid;
+    grid-template-rows: 3fr 3fr 4fr;
+    row-gap: 10px;
+}
+
+.center-content {
+    height: 500px;
+
+    margin: 0px 20px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    row-gap: 10px;
+}
+
+.right-content {
+    height: 500px;
+
+    display: grid;
+    grid-template-rows: 2fr 5fr 2fr;
+    row-gap: 10px;
+}
+
+
+.bg-grey {
+    background-color: rgb(184, 184, 184);
+}
+
+.footer {
+    margin-top: 20px;
+
+    height: 80px;
+}
+
+.dp-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

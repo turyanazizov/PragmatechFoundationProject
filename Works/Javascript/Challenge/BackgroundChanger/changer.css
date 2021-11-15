@@ -1,0 +1,22 @@
+body{
+    margin: 0px;
+}
+.changeButton{
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: coral;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.changeButton:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .4);
+}

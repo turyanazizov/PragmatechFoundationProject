@@ -38,7 +38,7 @@ menyu="""
 - İstifadəçi silmək üçün --3-- yazin
 - İstifadəçi məlumatlarini deyismek ucun --4-- yazin
 - Proqramı dayandırmaq üçün --5-- yazın
--------------------------------------------------------
+--------------------------------------------------------
 """
 
 while True:

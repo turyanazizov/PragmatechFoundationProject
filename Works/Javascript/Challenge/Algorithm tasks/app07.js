@@ -5,4 +5,8 @@ let obj = {
     olke: 'Azerbaycan'
 }
 
-console.log(obj);
+let keys = Object.keys(obj);
+
+for (let i = 0; i < keys.length; i++) {
+  console.log(obj[keys[i]]);
+}

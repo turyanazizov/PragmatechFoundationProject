@@ -1,7 +1,5 @@
-let a=prompt('Eded daxil edin: ');
+let a=promt('Ededi daxil edin : ');
 let tam;
 let kesr;
-tam=a-a%1;
-kesr=a-tam;
-console.log('tam hisse - ' + tam);
-console.log('kesr hisse - ' + kesr);
+arr=a.toString().split('.')
+console.log(Number(arr[0])+Number(arr[1]))

@@ -155,7 +155,7 @@ body {
 }
 
 .dec-size {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 /* Home Page Section Style End */
@@ -224,6 +224,7 @@ body {
     pointer-events: none;
     opacity: .05;
 }
+
 .content-info,
 .resume-content-info,
 .contact-content-info,
@@ -647,6 +648,8 @@ body {
 .send-message {
     height: 60px;
     cursor: pointer;
+    background-color: Transparent;
+    border: none;
 }
 
 .send-message a {
@@ -656,7 +659,6 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 0.8em;
-
 }
 
 .send-message p {
@@ -676,8 +678,7 @@ body {
 }
 
 .send-message a i {
-    font-size: 0.8em;
-
+    font-size: 1.2em;
 }
 
 .send-message a:hover i {
@@ -726,6 +727,7 @@ body {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #181818;
 }
+
 /* Blog Section Style End */
 
 /* Portfolio Section Style Start */
@@ -744,9 +746,11 @@ body {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: #181818;
 }
+
 .portfolio-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 /* Portfolio Section Style End */

@@ -1,28 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../static/css/layout.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+{% extends 'App/base.html' %} {% block content %}
 
 <body>
-    <!-- Home Page Start -->
-    <section id="home-page">
+    <section id="blog-page">
         <div class="container-full">
             <div class="row">
                 <div class="col-12">
-                    <div class="home-page">
+                    <div class="blog-page">
                         <div class="navbar">
                             <ul>
                                 <li id="logo">
@@ -33,7 +16,7 @@
                                     </a>
                                 </li>
                                 <li class="right">
-                                    <a href="/"><i style="color: #5ac24e;"
+                                    <a href="/"><i 
                                             class="fas fa-home hv-white"></i></a>
                                     <div class="li-hov">Home</div>
                                 </li>
@@ -50,7 +33,7 @@
                                     <div class="li-hov">Portfolio</div>
                                 </li>
                                 <li class="right">
-                                    <a href="/blog"><i class="far fa-newspaper hv-white"></i></a>
+                                    <a href="/blog"><i style="color: #5ac24e;" class="far fa-newspaper hv-white"></i></a>
                                     <div class="li-hov">Blog</div>
                                 </li>
                                 <li class="right">
@@ -60,41 +43,32 @@
                             </ul>
                             <ul id="sec-ul">
                                 <li>
-                                    <a href=""><i class="fab fa-dribbble dec-size hv-green "></i></a>
+                                    <a href="https://wa.me/+994708435013"><i class="fab fa-whatsapp-square dec-size hv-green"></i></a>
                                 </li>
                                 <li>
-                                    <a href=""><i class="fab fa-facebook-square dec-size hv-green"></i></a>
+                                    <a href="https://www.facebook.com/people/Turyan-Azizov/100007858877577/"><i class="fab fa-facebook-square dec-size hv-green"></i></a>
                                 </li>
                                 <li>
-                                    <a href=""><i class="fab fa-github-square dec-size hv-green"></i></a>
+                                    <a href="https://github.com/turyanazizov"><i class="fab fa-github-square dec-size hv-green"></i></a>
                                 </li>
                                 <li>
-                                    <a href=""><i class="fab fa-twitter-square dec-size hv-green"></i></a>
+                                    <a href="https://twitter.com/"><i class="fab fa-twitter-square dec-size hv-green"></i></a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="bg">
-                            <img src="../static/images/bg.jpg" alt="">
-                            <div id="im">
-                                <div>
-                                    <span id="name">Turyan</span>
-                                    <span id="sname">Azizov</span>
-                                </div>
-                                <div id="auto">
-                                    <h3><strong>I am a </strong> <p> </p> <p id="txt"></p></h3>
-                                </div>
+                        <div class="blog-content">
+                            <div class="blog-content-info">
+                                <div class="myblog">Blog</div>
                             </div>
-                            <div class="dark">
-
+                            <div class="resume-image">
+                                <img src="/static/images/ccc98a30-562f-4d14-bba0-b867fda7cf75.jfif" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-    <!-- Home Page End -->
-    <script src="../static/js/auto_write.js"></script>
 </body>
 
 </html>
+{% endblock %}

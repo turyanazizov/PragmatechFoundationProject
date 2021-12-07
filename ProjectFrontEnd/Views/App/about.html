@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../static/css/layout.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+{% extends 'App/base.html' %} {% block content %}
 
 <body>
     <section id="about-page">
@@ -35,8 +20,7 @@
                                     <div class="li-hov">Home</div>
                                 </li>
                                 <li class="right">
-                                    <a href="/about"><i style="color: #5ac24e;"
-                                            class="far fa-user hv-white"></i></a>
+                                    <a href="/about"><i style="color: #5ac24e;" class="far fa-user hv-white"></i></a>
                                     <div class="li-hov">About</div>
                                 </li>
                                 <li class="right">
@@ -58,16 +42,20 @@
                             </ul>
                             <ul id="sec-ul">
                                 <li>
-                                    <a href=""><i class="fab fa-dribbble dec-size hv-green"></i></a>
+                                    <a href="https://wa.me/+994708435013"><i
+                                            class="fab fa-whatsapp-square dec-size hv-green"></i></a>
                                 </li>
                                 <li>
-                                    <a href=""><i class="fab fa-facebook-square dec-size hv-green"></i></a>
+                                    <a href="https://www.facebook.com/people/Turyan-Azizov/100007858877577/"><i
+                                            class="fab fa-facebook-square dec-size hv-green"></i></a>
                                 </li>
                                 <li>
-                                    <a href=""><i class="fab fa-github-square dec-size hv-green"></i></a>
+                                    <a href="https://github.com/turyanazizov"><i
+                                            class="fab fa-github-square dec-size hv-green"></i></a>
                                 </li>
                                 <li>
-                                    <a href=""><i class="fab fa-twitter-square dec-size hv-green"></i></a>
+                                    <a href="https://twitter.com/"><i
+                                            class="fab fa-twitter-square dec-size hv-green"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -86,15 +74,15 @@
                                             <p>Download CV</p>
                                         </div>
                                     </a>
-                                    <a href="#">
+                                    <a href="https://github.com/turyanazizov">
                                         <div class="github smal-icons hv-green hv-shadow"><i class="fab fa-github"></i>
                                         </div>
                                     </a>
-                                    <a href="#">
+                                    <a href="https://www.facebook.com/people/Turyan-Azizov/100007858877577/">
                                         <div class="facebook smal-icons hv-green hv-shadow"><i
                                                 class="fab fa-facebook"></i></div>
                                     </a>
-                                    <a href="#">
+                                    <a href="https://twitter.com/">
                                         <div class="twitter smal-icons hv-green hv-shadow"><i
                                                 class="fab fa-twitter"></i></div>
                                     </a>
@@ -105,11 +93,10 @@
                                     and customization. Also I am good at <strong>html, css, <br>
                                         wordpress, php, jquery, bootstrap.</strong>
                                 </p>
-
                             </div>
                         </div>
                         <div class="about-image">
-                            <img src="../static/images/photo5395785676621985191 (1).jpg" alt="">
+                            <img src="/static/images/photo5395785676621985191 (1).jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -119,3 +106,4 @@
 </body>
 
 </html>
+{% endblock %}

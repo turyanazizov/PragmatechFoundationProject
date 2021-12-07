@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../static/css/layout.css">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+{% extends 'App/base.html' %} {% block content %}
 
 <body>
     <section id="contact-page">
@@ -32,7 +16,8 @@
                                     </a>
                                 </li>
                                 <li class="right">
-                                    <a href="/"><i class="fas fa-home hv-white"></i></a>
+                                    <a href="/"><i 
+                                            class="fas fa-home hv-white"></i></a>
                                     <div class="li-hov">Home</div>
                                 </li>
                                 <li class="right">
@@ -52,23 +37,22 @@
                                     <div class="li-hov">Blog</div>
                                 </li>
                                 <li class="right">
-                                    <a href="/contact"><i style="color: #5ac24e;"
-                                            class="far fa-envelope hv-white"></i></a>
+                                    <a href="/contact"><i style="color: #5ac24e;" class="far fa-envelope hv-white"></i></a>
                                     <div class="li-hov">Contact</div>
                                 </li>
                             </ul>
                             <ul id="sec-ul">
                                 <li>
-                                    <a href="#"><i class="fab fa-dribbble dec-size hv-green"></i></a>
+                                    <a href="https://wa.me/+994708435013"><i class="fab fa-whatsapp-square dec-size hv-green"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fab fa-facebook-square dec-size hv-green"></i></a>
+                                    <a href="https://www.facebook.com/people/Turyan-Azizov/100007858877577/"><i class="fab fa-facebook-square dec-size hv-green"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fab fa-github-square dec-size hv-green"></i></a>
+                                    <a href="https://github.com/turyanazizov"><i class="fab fa-github-square dec-size hv-green"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fab fa-twitter-square dec-size hv-green"></i></a>
+                                    <a href="https://twitter.com/"><i class="fab fa-twitter-square dec-size hv-green"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -133,12 +117,18 @@
                                             <div class="your-message">
                                                 <textarea cols="65" rows="6" placeholder="Your Message"></textarea>
                                             </div>
-                                            <div class="send-message">
+                                            <!-- <div class="send-message">
                                                 <a>
                                                     <p> Send Message</p>
                                                     <i class="fas fa-arrow-right"></i>
                                                 </a>
-                                            </div>
+                                            </div> -->
+                                            <button type="submit" class="send-message">
+                                                <a>
+                                                    <p> Send Message</p>
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </a>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -157,3 +147,4 @@
 </body>
 
 </html>
+{% endblock %}

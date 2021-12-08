@@ -61,7 +61,13 @@
                             </ul>
                         </div>
                         <div class="bg">
-                            <img src="../static/images/bg.jpg" alt="">
+                             <!-- particles.js container -->
+                        <div id="particles-js"></div> <!-- stats - count particles -->
+                        <div class="count-particles"> <span class="js-count-particles">--</span> particles </div>
+                        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+                        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+                        <!-- stats.js lib -->
+                        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
                             <div id="im">
                                 <div>
                                     <span id="name">Turyan</span>
@@ -75,7 +81,6 @@
                                 </div>
                             </div>
                             <div class="dark">
-
                             </div>
                         </div>
                     </div>
@@ -85,6 +90,7 @@
     </section>
     <!-- Home Page End -->
     <script src="/static/js/auto_write.js"></script>
+    <script src="/static/js/particulars.js"></script>
 </body>
 </html>
 {% endblock %}

@@ -61,23 +61,32 @@
                             </ul>
                         </div>
                         <div class="bg">
-                             <!-- particles.js container -->
-                        <div id="particles-js"></div> <!-- stats - count particles -->
-                        <div class="count-particles"> <span class="js-count-particles">--</span> particles </div>
-                        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-                        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-                        <!-- stats.js lib -->
-                        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+                            <!-- particles.js container -->
+                            <div id="particles-js"></div> <!-- stats - count particles -->
+                            <div class="count-particles"> <span class="js-count-particles">--</span> particles </div>
+                            <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+                            <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+                            <!-- stats.js lib -->
+                            <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
                             <div id="im">
                                 <div>
                                     <span id="name">Turyan</span>
                                     <span id="sname">Azizov</span>
                                 </div>
                                 <div id="auto">
-                                    <h3><strong>I am a </strong>
-                                        <p> </p>
-                                        <p id="txt"></p>
-                                    </h3>
+                                    <h1>
+                                        <h3><strong>I am a </strong>
+                                            <p> </p>
+                                            <!-- <p id="txt"></p> -->
+
+                                            <a style="color: aliceblue;text-decoration: none;font-family: 'Poppins', sans-serif;" href="" class="typewrite"
+                                                data-period="2000"
+                                                data-type='[ "web developer.", "freelancer.", "backend developer." ]'>
+                                                <span class="wrap"></span>
+                                            </a>
+                                        </h3>
+                                    </h1>
+
                                 </div>
                             </div>
                             <div class="dark">
@@ -92,5 +101,6 @@
     <script src="/static/js/auto_write.js"></script>
     <script src="/static/js/particulars.js"></script>
 </body>
+
 </html>
 {% endblock %}

@@ -231,9 +231,6 @@ body {
 .contact-content-info,
 .blog-content-info,
 .portfolio-content-info {
-    /* position: absolute;
-    overflow: hidden;
-    left: 0; */
     margin-top: 120px;
     display: flex;
     flex-direction: column;

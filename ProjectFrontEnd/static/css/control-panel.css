@@ -1,0 +1,169 @@
+.page-container {
+  display: flex;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  text-align: center;
+  background: #303641;
+}
+.main-content {
+  padding: 10px 30px;
+  position: absolute;
+  left: 200px;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+body,html{
+	margin: 0 ;
+	width: 100%;
+	height: 100%;
+	background: #adb5bd;
+}
+
+*{
+	font-family: 'Vollkorn SC', serif;
+}
+
+#nav_button{
+	display: none;
+}
+
+.body{
+	margin: 0 ;
+	width: 100%;
+	height: 100%;
+	background: #adb5bd;
+	float:right;
+	transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+	left: 0%;
+	transition: 0.75s;
+	position: relative;
+	overflow: auto;
+	opacity: 0.4;
+}
+
+.on{
+	display:block ;
+	width: 150px ;
+	padding: 15px;
+	background: #0b132b;
+	font-size: 30px;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	user-select: none;
+	box-shadow: 0px 0px 25px 0px rgba(0,0,0,.75);
+	transition: .1s;
+}
+
+.on:active{
+		box-shadow: 0px 0px 0px 0px rgba(0,0,0,.75);
+		transition: .1s;
+}
+
+.side_nav{
+	position: fixed;
+	width: 275px;
+	height: 100%;
+	background: #212529;
+	border-right: solid 8px #495057; 
+	z-index:999;
+	left:-283px;
+	float: left;
+	transition:.75s;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.logo{
+	width:100%;
+	height:180px;
+	border-bottom:solid 5px #495057;
+}
+
+.logo .off{
+	position: absolute;
+	right: 0;
+	width:30px;
+	height: 30px;
+	border-radius: 0% 0% 0% 50% ;
+	font-size: 25px;
+	text-align: center;
+	background: #adb5bd;
+	color: #fff;
+
+}
+
+.logo img{
+	margin: 0;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: relative;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+}
+.logo p{
+	margin-top: 57px;
+	font-size: 20px;
+	font-weight: 600;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fdfffc;
+}
+
+.nav_link{
+	display:block;
+	list-style: none;
+	text-align: center;
+	text-decoration: none;
+	font-size: 22px;
+	transition: .2s;
+}
+.nav_link a li{
+	padding: 13px;
+}
+.nav_link a{
+	width:100%;
+	text-decoration: none;
+	color: #adb5bd;
+	font-weight: 600;
+	transition: .3s;
+}
+.nav_link a li:hover{
+	background:#adb5bd;
+}
+.nav_link a:hover{
+	color: rgb(63, 61, 61);
+}
+#nav_button:checked ~ .side_nav{
+	left: 0;
+}
+
+#nav_button:checked ~ .body{
+	transform: matrix3d(0.62,0,0.00,-.0002,0.00,0.7,0.00,0,0,0,1,0,0,0,0,1);
+	left: 5%;
+}
+
+/* this is just to edit scrollbar */
+::-webkit-scrollbar{
+	background: #27292b;
+}

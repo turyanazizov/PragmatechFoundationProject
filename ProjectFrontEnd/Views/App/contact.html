@@ -105,31 +105,25 @@
                                         <div class="con-con">
                                             <h1><strong>Contact </strong>Form</h1>
                                         </div>
-                                        <div class="contact-form-content hv-shadow">
+                                        <form method="POST" class="contact-form-content hv-shadow">
                                             <div class="your-info">
                                                 <div class="your-info-name">
-                                                    <input type="text" placeholder="Full Name">
+                                                    <input name="fullname" type="text" placeholder="Full Name">
                                                 </div>
                                                 <div class="your-info-email">
-                                                    <input type="text" placeholder="Email Address">
+                                                    <input name="email" type="text" placeholder="Email Address">
                                                 </div>
                                             </div>
                                             <div class="your-message">
-                                                <textarea cols="65" rows="6" placeholder="Your Message"></textarea>
+                                                <textarea name="text" cols="65" rows="6" placeholder="Your Message"></textarea>
                                             </div>
-                                            <!-- <div class="send-message">
-                                                <a>
-                                                    <p> Send Message</p>
-                                                    <i class="fas fa-arrow-right"></i>
-                                                </a>
-                                            </div> -->
-                                            <button type="submit" class="send-message">
+                                            <button type="submit" value="Submit" class="send-message">
                                                 <a>
                                                     <p> Send Message</p>
                                                     <i class="fas fa-arrow-right"></i>
                                                 </a>
                                             </button>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

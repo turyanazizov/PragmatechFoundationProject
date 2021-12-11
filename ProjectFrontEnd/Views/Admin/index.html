@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/admin.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <title>Admin Panel</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/control-panel.css">
+    <link rel="stylesheet" href="/static/css/layout.css">
 </head>
+<body style="background-image:url(/static/images/bg.jpg);background-color:none;">
+    <input type="checkbox" name="nav" id="nav_button">
 
-<body>
-    <!-- <div class="bg"></div> -->
-    <!-- particles.js container -->
-    <div id="particles-js"></div> <!-- stats - count particles -->
-    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
-    <canvas id="projector">Your browser does not support the Canvas element.</canvas>
-    <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
-    <form>
-        <h3>Admin Panel</h3>
-        <label for="username">Username</label>
-        <input type="text" placeholder="Username" id="username">
-        <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password">
-        <button>Log In</button>
-        <p>Copyright @2021 | Created by <span>Turyan Azizov</span></p>
-    </form>
-    <script src="/static/js/background.js"></script>
+<div class="body">
+		<br>
+		<label for="nav_button" class="on">Click Here</label>
+		<!-- 	br tag to check scrolling -->
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<div class="side_nav">
+	<div class="logo">
+		<label for="nav_button" class="off">&Cross;</label>
+		<a href="/admin/index"><img src="/static/images/photo5395785676621985191 (1).jpg" /></a>
+		<p>Turyan Azizov</p>
+	</div>
+	<div class="nav_link">
+		<a href="/admin/control-home"><li>Home</li></a>
+		<a href="/admin/control-about"><li>About</li></a>
+		<a href="/admin/control-blog"><li>Blog</li></a>
+        <a href="/admin/control-contact"><li>Contact</li></a>
+        <a href="/admin/control-resume"><li>Resume</li></a>
+        <a href="/admin/control-portfolio"><li>Portfolio</li></a>
+        <a href="/admin/control-inbox"><li>Inbox</li></a>
+        <a href="/logout"><li style="margin-top:184px;">Log out</li></a>
+	</div>
+</div>
 </body>
-
 </html>

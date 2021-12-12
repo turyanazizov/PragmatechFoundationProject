@@ -129,7 +129,12 @@ body,html{
 	transform: translateX(-50%);
 	color: #fdfffc;
 }
-
+.mesaj{
+	position: absolute;
+    z-index: 1000;
+    left: 25%;
+    top: 5%;
+}
 .nav_link{
 	display:block;
 	list-style: none;

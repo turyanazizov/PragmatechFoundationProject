@@ -83,3 +83,33 @@ def admin_inbox():
         return render_template('Admin/control-inbox.html',messages=messages)
     else:
         return redirect('/admin')
+
+@app.route('/admin/control-inbox/delete/<int:id>',methods=['GET','POST'])
+def delete(id):
+
+    from database.models import Login
+    from start import db
+    loggedUser=Login.query.get(1)
+    if loggedUser.logged==1:
+        message=Message.query.get(id)
+        db.session.delete(message)
+        db.session.commit()
+        return redirect('/admin/control-inbox')
+    else:
+        return redirect('/admin')
+
+@app.route('/admin/control-inbox/update/<int:id>',methods=['GET','POST'])
+def update(id):
+    from database.models import Login
+    from start import db
+    message=Message.query.get(id)
+    loggedUser=Login.query.get(1)
+    if loggedUser.logged==1:
+        if request.method=="POST":
+            message.username=request.form['fullname']
+            message.email=request.form['email']
+            message.text=request.form['text']
+            db.session.commit()
+            return redirect('/admin/control-inbox')
+    return render_template('Admin/update.html',message=message)
+    

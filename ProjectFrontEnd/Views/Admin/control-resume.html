@@ -1,29 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/static/css/layout.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/css/control-panel.css">
 </head>
+
 <body>
-<div class="side_nav" style="left: 0px;">
-	<div class="logo">
-		<a href="/admin/index"><img src="/static/images/photo5395785676621985191 (1).jpg" /></a>
-		<p>Turyan Azizov</p>
-	</div>
-	<div class="nav_link">
-		<a href="/admin/control-about"><li>About</li></a>
-		<a href="/admin/control-blog"><li>Blog</li></a>
-        <a href="/admin/control-resume"><li>Resume</li></a>
-        <a href="/admin/control-portfolio"><li>Portfolio</li></a>
-        <a href="/admin/control-inbox"><li>Inbox</li></a>
-        <a href="/logout"><li style="margin-top:184px;">Log out</li></a>
-	</div>
-</div>
+    <div class="side_nav" style="left: 0px;">
+        <div class="logo">
+            <a href="/admin/index"><img src="/static/images/photo5395785676621985191 (1).jpg" /></a>
+            <p>Turyan Azizov</p>
+        </div>
+        <div class="nav_link">
+            <a href="/admin/control-about">
+                <li>About</li>
+            </a>
+            <a href="/admin/control-blog">
+                <li>Blog</li>
+            </a>
+            <a href="/admin/control-resume">
+                <li>Resume</li>
+            </a>
+            <a href="/admin/control-portfolio">
+                <li>Portfolio</li>
+            </a>
+            <a href="/admin/control-inbox">
+                <li>Inbox</li>
+            </a>
+            <a href="/logout">
+                <li style="margin-top:184px;">Log out</li>
+            </a>
+        </div>
+    </div>
+    <div style="left: 560px;" class="content">
+        
+        <form style="width: 700px;" action="/admin/control-resume" method="post">
+            <h4>Resume Experience Content</h4>
+            <div class="input-group mb-3">
+                <input name="exptitle" placeholder="Experience Title" type="text" class="form-control"
+                    aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <input name="expdetail" placeholder="Experience date and place" type="text" class="form-control"
+                    aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <textarea name="expcontent" placeholder="Experience content" class="form-control"
+                    aria-label="With textarea"></textarea>
+            </div>
+            <button style="margin-bottom:20px ;" value="submit" type="submit" class="btn btn-secondary btn-lg btn-block">Add All Information</button>
+            <h4>Resume Education Content</h4>
+            <div class="input-group mb-3">
+                <input name="edutitle" placeholder="Education title" type="text" class="form-control"
+                    aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <input name="edudetail" placeholder="Education date and place" type="text" class="form-control"
+                    aria-label="Default" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+                <textarea name="educontent" placeholder="Education content" class="form-control"
+                    aria-label="With textarea"></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary btn-lg btn-block">Add All Information</button>
+        </form>
+    </div>
 </body>
 </html>

@@ -66,30 +66,13 @@
                                     <div class="experience">
                                         <h1> <strong>My </strong>Experience</h1>
                                         <div class="boxes hv-shadow">
+                                            {% for resume in resumes %}
                                             <div class="boxes-item">
-                                                <h1>Web Development</h1>
-                                                <h2>2013-Present | Facebook Inc.</h2>
-                                                <p>Collaborate with creative and development teams on the execution of
-                                                    ideas.</p>
+                                                <h1>{{resume.experience_title}}</h1>
+                                                <h2>{{resume.experience_info}}</h2>
+                                                <p>{{resume.experience_content}}</p>
                                             </div>
-                                            <div class="boxes-item">
-                                                <h1>Web Development</h1>
-                                                <h2>2013-Present | Facebook Inc.</h2>
-                                                <p>Collaborate with creative and development teams on the execution of
-                                                    ideas.</p>
-                                            </div>
-                                            <div class="boxes-item">
-                                                <h1>Web Development</h1>
-                                                <h2>2013-Present | Facebook Inc.</h2>
-                                                <p>Collaborate with creative and development teams on the execution of
-                                                    ideas.</p>
-                                            </div>
-                                            <div class="boxes-item">
-                                                <h1>Web Development</h1>
-                                                <h2>2013-Present | Facebook Inc.</h2>
-                                                <p>Collaborate with creative and development teams on the execution of
-                                                    ideas.</p>
-                                            </div>
+                                            {% endfor %}
                                         </div>
                                         <div class="per-skills">
                                             <h1> <strong>Personal </strong>Skills</h1>
@@ -143,30 +126,13 @@
                                     <div class="education">
                                         <h1><strong>My </strong>Education</h1>
                                         <div class="boxes hv-shadow">
+                                            {% for resume in resumes %}
                                             <div class="boxes-item">
-                                                <h1>Web Development</h1>
-                                                <h2>2013-Present | Facebook Inc.</h2>
-                                                <p>Collaborate with creative and development teams on the execution of
-                                                    ideas.</p>
+                                                <h1>{{resume.education_title}}</h1>
+                                                <h2>{{resume.education_info}}</h2>
+                                                <p>{{resume.education_content}}</p>
                                             </div>
-                                            <div class="boxes-item">
-                                                <h1>Web Development</h1>
-                                                <h2>2013-Present | Facebook Inc.</h2>
-                                                <p>Collaborate with creative and development teams on the execution of
-                                                    ideas.</p>
-                                            </div>
-                                            <div class="boxes-item">
-                                                <h1>Web Development</h1>
-                                                <h2>2013-Present | Facebook Inc.</h2>
-                                                <p>Collaborate with creative and development teams on the execution of
-                                                    ideas.</p>
-                                            </div>
-                                            <div class="boxes-item">
-                                                <h1>Web Development</h1>
-                                                <h2>2013-Present | Facebook Inc.</h2>
-                                                <p>Collaborate with creative and development teams on the execution of
-                                                    ideas.</p>
-                                            </div>
+                                            {% endfor %}
                                         </div>
                                         <div class="pro-skills">
                                             <h1> <strong>Professional </strong>Skills</h1>

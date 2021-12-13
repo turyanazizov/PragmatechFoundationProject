@@ -62,7 +62,23 @@
                         </div>
                         <div class="blog-content">
                             <div class="blog-content-info">
-                                <div class="myblog">Blog</div>
+                                <div class="myblog">My Blog</div>
+                                <div class="contact-info">
+                                    <div class="contact-all-info">
+                                        <h1><strong>My </strong>Blogs</h1>
+                                    </div>
+                                    <div class="blog-form">
+                                        {% for blog in blogs %}
+                                        <a href="https://medium.com/@turyanezizov13">
+                                            <form method="POST" class="hv-shadow">
+                                                <img src="/static/uploads/{{blog.photo}}" alt="">
+                                                <h2>{{blog.blog_title}}</h2>
+                                                <p>{{blog.blog_detail}}</p>
+                                            </form>
+                                        </a>
+                                        {% endfor %}
+                                    </div>
+                                </div>
                             </div>
                             <div class="resume-image">
                                 <img src="/static/images/ccc98a30-562f-4d14-bba0-b867fda7cf75.jfif" alt="">

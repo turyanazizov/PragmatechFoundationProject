@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/static/css/layout.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/css/control-panel.css">
 </head>
 
 <body>
-
-
     <div class="side_nav" style="left: 0px;">
         <div class="logo">
             <a href="/admin/index"><img src="/static/images/photo5395785676621985191 (1).jpg" /></a>
@@ -40,6 +41,38 @@
                 <li style="margin-top:184px;">Log out</li>
             </a>
         </div>
+    </div>
+    <div class="content">
+        <form style="margin-bottom: 10px;" enctype="multipart/form-data" method="POST">
+            <h3>Add new Blog</h3>
+            <input name="title" style="font-size:15px;" type="text" class="form-control my-2" placeholder="Blog title">
+            <input name="detail" style="font-size:15px;" type="text" class="form-control my-2"
+                placeholder="Blog detail">
+            <input name="photo" type="file" class="form-control my-2" placeholder="Blog image">
+            <button type="submit" class="btn btn-secondary mt-3">Save changes</button>
+        </form>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <td>ID</td>
+                    <td>Blog Title</td>
+                    <td>Blog Detail</td>
+                    <td>Blog Photo</td>
+                    <td>#</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for blog in blogs %}
+                <tr>
+                    <th scope="row" >{{blog.id}}</th>
+                    <td>{{blog.blog_title}}</td>
+                    <td>{{blog.blog_detail}}</td>
+                    <td><img style="width: 100px;height:80px;" src="/static/uploads/{{blog.photo}}" alt=""></td>
+                    <td><a href="/admin/control-blog/delete/{{blog.id}}"><i class="fas fa-trash"></i></a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 </body>
 

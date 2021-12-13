@@ -3,17 +3,20 @@ from flask import render_template,request,redirect
 from start import app
 from database.models import *
 import datetime
+
 @app.route('/')
 def index():
     return render_template('App/index.html')
 
-@app.route('/about')
+@app.route('/about',methods=['GET','POST'])
 def about():
-    return render_template('App/about.html')
+    about=About.query.get(1)
+    return render_template('App/about.html',about=about)
 
-@app.route('/blog')
+@app.route('/blog',methods=['GET','POST'])
 def blog():
-    return render_template('App/blog.html')
+    blogs=Blog.query.all()
+    return render_template('App/blog.html',blogs=blogs)
 
 @app.route('/contact',methods=['GET','POST'])
 def contact():
@@ -37,4 +40,5 @@ def portfolio():
 
 @app.route('/resume')
 def resume():
-    return render_template('App/resume.html')
+    resumes=Resume.query.all()
+    return render_template('App/resume.html',resumes=resumes)

@@ -1,3 +1,4 @@
+from os import name
 from start import db
 
 class Message(db.Model):
@@ -12,3 +13,18 @@ class Login(db.Model):
     username = db.Column(db.String(50))
     password = db.Column(db.String(50))
     logged = db.Column(db.Boolean)
+
+class About(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    first_text = db.Column(db.Text)
+    second_text = db.Column(db.Text)
+
+class Resume(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    experience_title = db.Column(db.String(100))
+    experience_info = db.Column(db.String(100))
+    experience_content = db.Column(db.Text)
+    education_title = db.Column(db.String(100))
+    education_info = db.Column(db.String(100))
+    education_content = db.Column(db.Text)
+

@@ -13,16 +13,6 @@ def admin_index():
     else:
         return redirect('/admin')
 
-@app.route('/admin/control-home')
-def admin_home():
-    from database.models import Login
-    from start import db
-    loggedUser=Login.query.get(1)
-    if loggedUser.logged==1:
-        return render_template('Admin/control-home.html')
-    else:
-        return redirect('/admin')
-
 @app.route('/admin/control-about')
 def admin_about():
     from database.models import Login
@@ -60,16 +50,6 @@ def admin_blog():
     loggedUser=Login.query.get(1)
     if loggedUser.logged==1:
         return render_template('Admin/control-blog.html')
-    else:
-        return redirect('/admin')
-
-@app.route('/admin/control-contact',methods=['GET','POST'])
-def admin_contact():
-    from database.models import Login
-    from start import db
-    loggedUser=Login.query.get(1)
-    if loggedUser.logged==1:
-        return render_template('Admin/control-contact.html')
     else:
         return redirect('/admin')
 
@@ -112,4 +92,3 @@ def update(id):
             db.session.commit()
             return redirect('/admin/control-inbox')
     return render_template('Admin/update.html',message=message)
-    

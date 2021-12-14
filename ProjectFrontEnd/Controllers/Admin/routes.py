@@ -34,17 +34,7 @@ def admin_resume():
             db.session.add(resume)
             db.session.commit()
             render_template('App/resume.html',resumes=resumes)
-        return render_template('Admin/control-resume.html')
-    else:
-        return redirect('/admin')
-        
-@app.route('/admin/control-portfolio')
-def admin_portfolio():
-    from database.models import Login
-    from start import db
-    loggedUser=Login.query.get(1)
-    if loggedUser.logged==1:
-        return render_template('Admin/control-portfolio.html')
+        return render_template('Admin/control-resume.html',resumes=resumes)
     else:
         return redirect('/admin')
 
@@ -95,20 +85,6 @@ def delete(id):
     else:
         return redirect('/admin')
 
-@app.route('/admin/control-about/delete/<int:id>',methods=['GET','POST'])
-def delete_about(id):
-    from database.models import Login
-    from database.models import About
-    from start import db
-    loggedUser=Login.query.get(1)
-    if loggedUser.logged==1:
-        about=About.query.get(id)
-        db.session.delete(about)
-        db.session.commit()
-        return redirect('/admin/control-about')
-    else:
-        return redirect('/admin')
-
 @app.route('/admin/control-about',methods=['GET','POST'])
 def update_about():
     from database.models import Login
@@ -122,8 +98,23 @@ def update_about():
             about.second_text=request.form['secondcontent']
             db.session.commit()
             render_template('App/about.html',about=about)
+            
             return render_template('Admin/control-about.html',about=about)
     return render_template('Admin/control-about.html',about=about)
+
+@app.route('/admin/control-resume/delete/<int:id>',methods=['GET','POST'])
+def delete_resume(id):
+    from database.models import Login
+    from database.models import Blog
+    from start import db
+    loggedUser=Login.query.get(1)
+    if loggedUser.logged==1:
+        resume=Resume.query.get(id)
+        db.session.delete(resume)
+        db.session.commit()
+        return redirect('/admin/control-resume')
+    else:
+        return redirect('/admin')
 
 @app.route('/admin/control-blog/delete/<int:id>',methods=['GET','POST'])
 def delete_blog(id):
@@ -136,5 +127,42 @@ def delete_blog(id):
         db.session.delete(blog)
         db.session.commit()
         return redirect('/admin/control-blog')
+    else:
+        return redirect('/admin')
+
+@app.route('/admin/control-portfolio',methods=['GET','POST'])
+def admin_portfolio():
+    from database.models import Login
+    from database.models import Portfolio
+    from start import db
+    loggedUser=Login.query.get(1)
+    if loggedUser.logged==1:
+        portfolios=Portfolio.query.all()
+        if request.method=="POST":
+            file=request.files['photo']
+            _title=request.form['title']
+            _detail=request.form['detail']
+            _photo=file.filename
+            file.save(os.path.join('static/uploads',_photo))
+            portfolio=Portfolio(portfolio_title=_title,portfolio_detail=_detail,photo=_photo)
+            db.session.add(portfolio)
+            db.session.commit()
+            return redirect('/admin/control-portfolio')
+        render_template('App/portfolio.html',portfolios=portfolios)
+        return render_template('Admin/control-portfolio.html',portfolios=portfolios)
+    else:
+        return redirect('/admin')
+
+@app.route('/admin/control-portfolio/delete/<int:id>',methods=['GET','POST'])
+def delete_portfolio(id):
+    from database.models import Login
+    from database.models import Portfolio
+    from start import db
+    loggedUser=Login.query.get(1)
+    if loggedUser.logged==1:
+        portfolio=Portfolio.query.get(id)
+        db.session.delete(portfolio)
+        db.session.commit()
+        return redirect('/admin/control-portfolio')
     else:
         return redirect('/admin')

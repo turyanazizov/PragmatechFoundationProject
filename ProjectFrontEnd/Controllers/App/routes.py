@@ -34,9 +34,10 @@ def contact():
     else:
         return render_template('app/contact.html')
 
-@app.route('/portfolio')
+@app.route('/portfolio',methods=['GET','POST'])
 def portfolio():
-    return render_template('App/portfolio.html')
+    portfolios=Portfolio.query.all()
+    return render_template('App/portfolio.html',portfolios=portfolios)
 
 @app.route('/resume')
 def resume():

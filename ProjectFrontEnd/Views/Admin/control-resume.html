@@ -43,7 +43,7 @@
         </div>
     </div>
     <div style="left: 560px;" class="content">
-        
+
         <form style="width: 700px;" action="/admin/control-resume" method="post">
             <h4>Resume Experience Content</h4>
             <div class="input-group mb-3">
@@ -58,7 +58,8 @@
                 <textarea name="expcontent" placeholder="Experience content" class="form-control"
                     aria-label="With textarea"></textarea>
             </div>
-            <button style="margin-bottom:20px ;" value="submit" type="submit" class="btn btn-secondary btn-lg btn-block">Add All Information</button>
+            <button style="margin-bottom:20px ;" value="submit" type="submit"
+                class="btn btn-secondary btn-lg btn-block">Add All Information</button>
             <h4>Resume Education Content</h4>
             <div class="input-group mb-3">
                 <input name="edutitle" placeholder="Education title" type="text" class="form-control"
@@ -75,5 +76,60 @@
             <button type="submit" class="btn btn-secondary btn-lg btn-block">Add All Information</button>
         </form>
     </div>
+    <div style="left: 384px;
+    top: 632px;
+    position: absolute;">
+        <div style="margin-top:10px;background:aqua">
+            <table class="table">
+                <thead style="background-color: rgb(27, 27, 27);color:whitesmoke">
+                    <tr>
+                        <td>ID</td>
+                        <td>Experience title</td>
+                        <td>Experience detail</td>
+                        <td>Experience content</td>
+                        <td>#</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for resume in resumes %}
+                    <tr>
+                        <th scope="row">{{resume.id}}</th>
+                        <td>{{resume.experience_title}}</td>
+                        <td>{{resume.experience_info}}</td>
+                        <td>{{resume.experience_content}}</td>
+                        <td><a href="/admin/control-resume/delete/{{resume.id}}"> <i style="margin-right:10px" class="fas fa-trash-alt"></i></a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    
+        <div style="margin-top:10px;background:aquamarine">
+            <table class="table">
+                <thead style="background-color: rgb(27, 27, 27);color:whitesmoke">
+                    <tr>
+                        <td>ID</td>
+                        <td>Education title</td>
+                        <td>Education detail</td>
+                        <td>Education content</td>
+                        <td>#</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for resume in resumes %}
+                    <tr>
+                        <th scope="row">{{resume.id}}</th>
+                        <td>{{resume.education_title}}</td>
+                        <td>{{resume.education_info}}</td>
+                        <td>{{resume.education_content}}</td>
+                        <td><a href="/admin/control-resume/delete/{{resume.id}}"> <i style="margin-right:10px" class="fas fa-trash-alt"></i></a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
 </body>
+
 </html>

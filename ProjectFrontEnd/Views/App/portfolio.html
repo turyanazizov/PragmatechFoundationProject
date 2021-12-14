@@ -59,10 +59,25 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="portfolio-content">
-                            <div class="portfolio-content-info">
-                                <div class="myportfolio">Portfolio</div>
-
+                        <div class="blog-content">
+                            <div class="blog-content-info">
+                                <div class="myblog">Portfolio</div>
+                                <div class="contact-info">
+                                    <div class="contact-all-info">
+                                        <h1><strong>My </strong>Portfolio</h1>
+                                    </div>
+                                    <div class="blog-form">
+                                    {% for portfolio in portfolios %}   
+                                        <a href="https://medium.com/@turyanezizov13">
+                                            <form method="POST" class="hv-shadow">
+                                                <img src="/static/uploads/{{portfolio.photo}}" alt="">
+                                                <h2>{{portfolio.portfolio_title}}</h2>
+                                                <p>{{portfolio.portfolio_detail}}</p>
+                                            </form>
+                                        </a>
+                                    {% endfor %}    
+                                    </div>
+                                </div>
                             </div>
                             <div class="portfolio-image">
                                 <img src="/static/images/38ba8e54-7b0b-4ef6-be46-93482a74ade1.jfif" alt="">

@@ -41,15 +41,14 @@
     <div class="content">
         <form method="POST" >  
             <p style="font-weight:400;font-size:20px;background-color:lightgray;text-align:center;width:900px">First About Content</p>
-            <div style="width: 900px;height:200px;margin-bottom:20px;" class="input-group input-group-lg">
+            <div style="width: 900px;height:100px;margin-bottom:20px;" class="input-group input-group-lg">
               <input   name="firstcontent" value="{{about.first_text}}" style="font-size:15px;" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
             </div>
             <p style="font-weight:400;font-size:20px;background-color:lightgray;text-align:center;width:900px">Second About Content</p>
-            <div style="width: 900px;height:200px;" class="input-group input-group-lg">
+            <div style="width: 900px;height:100px;" class="input-group input-group-lg">
               <input value="{{about.second_text}}"  name="secondcontent" style="font-size:15px" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
             </div>
             <button  style="width: 900px;" type="submit" class="btn btn-secondary btn-lg btn-block mt-3">Save changes</button>
-            <a href="/admin/control-about/delete/{{about.id}}"><i class="fas fa-trash"></i>
         </form>
     </div>
 </body>

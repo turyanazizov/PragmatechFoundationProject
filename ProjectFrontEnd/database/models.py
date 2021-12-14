@@ -28,6 +28,12 @@ class Resume(db.Model):
     education_info = db.Column(db.String(100))
     education_content = db.Column(db.Text)
 
+class Portfolio(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    portfolio_title = db.Column(db.String(50))
+    portfolio_detail = db.Column(db.String(50))
+    photo = db.Column(db.String(200))
+
 class Blog(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     blog_title = db.Column(db.String(50))

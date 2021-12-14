@@ -51,28 +51,33 @@
             <input name="photo" type="file" class="form-control my-2" placeholder="portfolio image">
             <button type="submit" class="btn btn-secondary mt-3">Save changes</button>
         </form>
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <td>ID</td>
-                    <td>portfolio Title</td>
-                    <td>portfolio Detail</td>
-                    <td>portfolio Photo</td>
-                    <td>#</td>
-                </tr>
-            </thead>
-            <tbody>
-                {% for portfolio in portfolios %}
-                <tr>
-                    <th scope="row" >{{portfolio.id}}</th>
-                    <td>{{portfolio.portfolio_title}}</td>
-                    <td>{{portfolio.portfolio_detail}}</td>
-                    <td><img style="width: 100px;height:80px;" src="/static/uploads/{{portfolio.photo}}" alt=""></td>
-                    <td><a href="/admin/control-portfolio/delete/{{portfolio.id}}"><i class="fas fa-trash"></i></a></td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+        <form method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <td>ID</td>
+                        <td>portfolio Title</td>
+                        <td>portfolio Detail</td>
+                        <td>portfolio Photo</td>
+                        <td>#</td>
+                        <td>#</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for portfolio in portfolios %}
+                    <tr>
+                        <th scope="row" >{{portfolio.id}}</th>
+                        <td>{{portfolio.portfolio_title}}</td>
+                        <td>{{portfolio.portfolio_detail}}</td>
+                        <td><img style="width: 100px;height:80px;" src="/static/uploads/{{portfolio.photo}}" alt=""></td>
+                        <td><a href="/admin/control-portfolio/delete/{{portfolio.id}}"><i class="fas fa-trash"></i></a></td>
+                        <td><a href="/admin/control-portfolio/update/{{portfolio.id}}"><i class="fas fa-edit"></i></a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </form>
+        
     </div>
 </body>
 

@@ -7,7 +7,7 @@
 - Tədris müddətində hədəflədiyim layihə şablonu :[Sablon01](https://preview.themeforest.net/item/patrick-personal-vcard-resume-cv-template/full_screen_preview/22390204?_ga=2.67436881.1742451474.1632907729-965311843.1632768292)
 
 ###  Tədris müddətində gördüyüm işlər
-- [Portfolio]()
+- [Portfolio](https://ta-portfoliooo.herokuapp.com/)
     - [Kodlar](https://github.com/turyanazizov/PragmatechFoundationProject/tree/master/ProjectFrontEnd)
     - HTML, CSS, Javascript
     - 3 Ay

@@ -71,7 +71,10 @@
                                         {% for blog in blogs %}
                                         <a href="https://medium.com/@turyanezizov13">
                                             <form method="POST" class="hv-shadow">
-                                                <img src="/static/uploads/{{blog.photo}}" alt="">
+                                                <div class="portfolio-img">
+                                                    <div class="hv"></div>
+                                                    <img src="/static/uploads/{{blog.photo}}" alt="">
+                                                </div>                           
                                                 <h2>{{blog.blog_title}}</h2>
                                                 <p>{{blog.blog_detail}}</p>
                                             </form>

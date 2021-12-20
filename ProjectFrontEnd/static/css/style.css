@@ -756,6 +756,7 @@ body {
 /* Portfolio Section Style End */
 
 /* Particles Style Start */
+
 #particles-js {
     position: absolute;
     width: 100%;
@@ -765,30 +766,349 @@ body {
     background-size: cover;
     background-position: 50% 50%;
 }
-.blog-form form img{
+
+/* Particles Style End */
+
+.blog-form form img {
     width: 100%;
     height: 100%;
     border-radius: 18px 18px 0px 0px;
-    object-fit: cover;   
+    object-fit: cover;
 }
-.blog-form form{
+
+.blog-form form {
+    position: relative;
     padding: 0px 0px 70px 0px;
     height: 320px;
     width: 660px;
     margin: 16px 0px;
     background: rgba(255, 255, 255, .05);
     border-radius: 18px;
+    overflow: hidden;
 }
-.blog-form h2{
+
+.hv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    background-color: #5ac24e;
+    display: none;
+}
+
+.portfolio-img img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform .5s ease;
+}
+
+.portfolio-img:hover img {
+    transform: scale(1.3);
+    transition: transform .5s ease;
+    opacity: 0.5;
+}
+
+.portfolio-img:hover .hv {
+    display: block;
+}
+
+.portfolio-img {
+    position: relative;
+    width: 100%;
+    height: 324px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.blog-form h2 {
     margin: 0;
     display: block;
     font-size: 16px;
     color: #fff;
     font-weight: 700;
 }
-.blog-form p{
+
+.blog-form p {
     font-size: 12px;
     line-height: 12px;
     color: #777;
     font-weight: 400;
+}
+
+/* Respomsive Design Styles */
+@media (max-width: 500px) and (min-width:0px) {
+    .navbar {
+        height: 100%;
+    }
+    .bg{
+        width: 100%;
+        height: 100vh;
+    }
+    #im {
+        position: absolute;
+        right: 88%;
+        top: 45%;
+        width: fit-content;
+    }
+    #name, #sname {
+        font-size: 35px;
+        line-height: 50px;
+        font-weight: 500;
+    }
+    .about-image,
+    .resume-image,
+    .blog-image,
+    .portfolio-image {
+        display: none;
+    }
+
+    .about-content,
+    .resume-content,
+    .contact-content,
+    .blog-content,
+    .portfolio-content {
+        width: 100%;
+    }
+
+    .boxes {
+        width: 150px;
+        padding: 10px 10px 0px 10px;
+        margin-left: 20px;
+    }
+
+    .boxes-item p {
+        font-size: 13px;
+        line-height: 1.5;
+        text-align: start;
+    }
+
+    .experience {
+        width: calc(100%/2);
+        padding: 0px 10px;
+    }
+
+    .education {
+        width: calc(100%/2);
+        padding: 0px 10px;
+    }
+
+    .experience h1 {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .education h1 {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .blog-form form {
+        padding: 0px 0px 70px 0px;
+        width: 300px;
+        margin: 16px 0px;
+    }
+
+    .about-me,
+    .myresume,
+    .mycontact,
+    .myblog,
+    .myportfolio {
+
+        font-size: 50px;
+        line-height: 120px;
+        font-weight: 500;
+    }
+
+    .content-info {
+        font-size: 15px;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .boxes-icons {
+        color: #5ac24e;
+        font-size: 1em;
+    }
+
+    .boxes-content h1 {
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .boxes-content p {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+    .contact-boxes {
+        grid-template-columns: repeat(1, 4fr);
+    }
+
+    .your-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .contact-form-content {
+        padding: 10px;
+        height: 300px;
+        width: 265px;
+    }
+
+}
+@media (max-width:1007px) and (min-width:501px){
+    .navbar {
+        height: 100%;
+    }
+    .bg{
+        width: 100%;
+        height: 100vh;
+    }
+    #im {
+        position: absolute;
+        right: 70%;
+        top: 45%;
+        width: fit-content;
+    }
+    #name, #sname {
+        font-size: 35px;
+        line-height: 50px;
+        font-weight: 500;
+    }
+    .about-image,
+    .resume-image,
+    .blog-image,
+    .portfolio-image {
+        display: none;
+    }
+
+    .about-content,
+    .resume-content,
+    .contact-content,
+    .blog-content,
+    .portfolio-content {
+        width: 100%;
+    }
+
+    .boxes {
+        width: 200px;
+        padding: 10px 10px 0px 10px;
+        margin-left: 20px;
+    }
+
+    .boxes-item p {
+        font-size: 13px;
+        line-height: 1.5;
+        text-align: start;
+    }
+
+    .experience {
+        width: calc(100%/2);
+        padding: 0px 10px;
+    }
+
+    .education {
+        width: calc(100%/2);
+        padding: 0px 10px;
+    }
+
+    .experience h1 {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .education h1 {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .blog-form form {
+        padding: 0px 0px 70px 0px;
+        width: 500px;
+        margin: 16px 0px;
+    }
+
+    .about-me,
+    .myresume,
+    .mycontact,
+    .myblog,
+    .myportfolio {
+
+        font-size: 50px;
+        line-height: 120px;
+        font-weight: 500;
+    }
+
+    .content-info {
+        font-size: 15px;
+    }
+
+    .map {
+        display: none;
+    }
+
+    .boxes-icons {
+        color: #5ac24e;
+        font-size: 1em;
+    }
+
+    .boxes-content h1 {
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff;
+        font-weight: 500;
+    }
+
+    .boxes-content p {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+    .contact-boxes {
+        grid-template-columns: repeat(1, 4fr);
+    }
+    .contact-boxes-item{
+        width: 400px;
+    }
+    .your-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .contact-form-content {
+        padding: 10px;
+        height: 300px;
+        width: 400px;
+    }
+}
+@media (min-width:1008px){
+    .navbar {
+        height: 100%;
+    }
+    .bg{
+        width: calc(100% - 44px);
+        height: 753.6px;
+    }
+    #im {
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        width: fit-content;
+    }
+    #name, #sname {
+        font-size: 66px;
+        line-height: 66px;
+        font-weight: 700;
+    }
 }

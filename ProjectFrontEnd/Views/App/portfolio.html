@@ -68,9 +68,12 @@
                                     </div>
                                     <div class="blog-form">
                                     {% for portfolio in portfolios %}   
-                                        <a href="https://medium.com/@turyanezizov13">
+                                        <a href="{{portfolio.link}}">
                                             <form method="POST" class="hv-shadow">
-                                                <img src="/static/uploads/{{portfolio.photo}}" alt="">
+                                                <div class="portfolio-img">
+                                                    <div class="hv"></div>
+                                                    <img  src="/static/uploads/{{portfolio.photo}}" alt="">
+                                                </div>
                                                 <h2>{{portfolio.portfolio_title}}</h2>
                                                 <p>{{portfolio.portfolio_detail}}</p>
                                             </form>

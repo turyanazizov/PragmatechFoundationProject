@@ -163,9 +163,10 @@ def admin_portfolio():
             file=request.files['photo']
             _title=request.form['title']
             _detail=request.form['detail']
+            _link=request.form['link']
             _photo=file.filename
             file.save(os.path.join('static/uploads',_photo))
-            portfolio=Portfolio(portfolio_title=_title,portfolio_detail=_detail,photo=_photo)
+            portfolio=Portfolio(portfolio_title=_title,portfolio_detail=_detail,photo=_photo,link=_link)
             db.session.add(portfolio)
             db.session.commit()
             return redirect('/admin/control-portfolio')
@@ -199,6 +200,7 @@ def update_portfolio(id):
         if request.method=="POST":                          
             portfolio.portfolio_title=request.form['title']
             portfolio.portfolio_detail=request.form['detail']
+            portfolio.link=request.form['link']
             file=request.files['photo']
             _photo=file.filename
             file.save(os.path.join('static/uploads',_photo))

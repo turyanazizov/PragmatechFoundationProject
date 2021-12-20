@@ -30,6 +30,7 @@ class Resume(db.Model):
 
 class Portfolio(db.Model):
     id = db.Column(db.Integer, primary_key=True)
+    link = db.Column(db.Text)
     portfolio_title = db.Column(db.String(50))
     portfolio_detail = db.Column(db.String(50))
     photo = db.Column(db.String(200))

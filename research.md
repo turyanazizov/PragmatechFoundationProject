@@ -17,4 +17,8 @@
 6. Funksiyonal proqramlaşdırma paralel proqramlaşdırmanı dəstəkləyir.OOP isə paralel proqramlaşdırmanı dəstəkləmir.
 7. Funksiyonal proqramlaşdırma heç bir giriş spesifikasiyası yoxdur.OOP 3 giriş spesifikatoruna malikdir yəni Public, Private and Protected.
 8. OOP-də yeni məlumat və funksiyalar əlavə etmək daha asandır.
+<<<<<<< HEAD
+9. Funksiyonal proqramlaşdırmada məlumatların gizlədilməsi mümkün deyil buna görə də təhlükəsizlik mümkün deyil.OOP isə məlumatların gizlədilməsini təmin edir və təhlükəsiz proqramlar mümkündür..
+=======
 9. Funksiyonal proqramlaşdırmada məlumatların gizlədilməsi mümkün deyil buna görə də təhlükəsizlik mümkün deyil.OOP isə məlumatların gizlədilməsini təmin edir və təhlükəsiz proqramlar mümkündür.
+>>>>>>> 8c2a28bb6a85792e697de2c2206e16a6e35dfce5

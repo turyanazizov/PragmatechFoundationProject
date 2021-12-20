@@ -14,7 +14,7 @@
  - [Todo Site](https://tooodoapp.herokuapp.com/)
     - [Kodlar](https://github.com/turyanazizov/TodoApp)
     - HTML, CSS, Javascript, Flask,SQLite
-    - 2 gün
+    - 3 gün
 
 ### Tədris müddətində yazdığım məqalələr
 - [İT sahəsinin hansı əsas qolları var?](https://medium.com/@turyanezizov13/i%CC%87t-sah%C9%99sinin-hans%C4%B1-%C9%99sas-qollar%C4%B1-var-93efb1e455c4)

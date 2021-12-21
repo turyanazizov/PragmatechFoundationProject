@@ -843,20 +843,36 @@ body {
     .navbar {
         height: 100%;
     }
+    .container-full {
+        width: calc(100% - 44px);
+    }
     .bg{
         width: 100%;
         height: 100vh;
     }
+    .navbar #sec-ul li {
+        margin-bottom: 10px;
+        font-size: 0.6em;
+    }
+    .navbar li {
+        margin-bottom: 15px;
+    }
+    .navbar ul li a i {
+        font-size: 0.9em;
+    }
     #im {
         position: absolute;
-        right: 88%;
+        right: 105%;
         top: 45%;
         width: fit-content;
     }
     #name, #sname {
-        font-size: 35px;
+        font-size: 25px;
         line-height: 50px;
         font-weight: 500;
+    }
+    .bg h3{
+        font-size: 13px;
     }
     .about-image,
     .resume-image,
@@ -1098,7 +1114,7 @@ body {
     }
     .bg{
         width: calc(100% - 44px);
-        height: 753.6px;
+        height: 100vh;
     }
     #im {
         position: absolute;
@@ -1111,4 +1127,5 @@ body {
         line-height: 66px;
         font-weight: 700;
     }
+    
 }
